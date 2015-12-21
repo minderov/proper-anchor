@@ -1,0 +1,20 @@
+.anchorBox.colored {
+    background-color: #fff0be;
+}
+.anchorBox:not(.colored) {
+    background-color: inherit;
+    -webkit-transition: background-color 4000ms linear 1500ms;
+    -moz-transition: background-color 4000ms linear 1500ms;
+    -o-transition: background-color 4000ms linear 1500ms;
+    -ms-transition: background-color 4000ms linear 1500ms;
+    transition: background-color 4000ms linear 1500ms;
+}
+.anchorBox {
+    box-sizing: content-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 8px;
+    padding-right: 0;
+}
