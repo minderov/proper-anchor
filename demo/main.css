@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Tinos);
+.main {
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'Tinos', sans-serif;
+    font-size: 18px;
+}
+.main h1 {
+    text-align: center;
+}
+.main a {
+    color: #0000e3;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    border-bottom: 1px dashed #0000e3;
+}
+.links-block {
+    border: 1px #ccc solid;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+.links-block + .links-block {
+    margin-top: 8px;
+}
+.links-block h2 {
+    text-align: center;
+    margin: 0;
+}
