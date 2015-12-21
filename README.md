@@ -5,7 +5,8 @@ The usual HTML anchor has several flaws:
 * When the anchor is near the bottom of the webpage, there is no way to comprehend where the anchor is
 
 The Proper Anchor tackles these flaws by showing the content in the middle of the screen and highlighting it
-[DEMO](http://minderov.com/proper-anchor)
+
+### [DEMO](http://minderov.com/proper-anchor)
 
 ## Setup
 ```html
