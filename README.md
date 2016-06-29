@@ -12,7 +12,7 @@ The Proper Anchor tackles these flaws by showing the content in the middle of th
 ```html
 <!-- Dependencies -->
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<!-- Jouele -->
+<!-- Proper Anchor -->
 <script src="dist/proper-anchor.js"></script>
 <link href="dist/proper-anchor.css" rel="stylesheet"/>
 <script>
