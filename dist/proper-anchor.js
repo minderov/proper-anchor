@@ -1,31 +1,3 @@
-/*
-var $root = $('html, body');
-$('.anchorLink').click(function() {
-    var anchor = $('[name="' + $.attr(this, 'href').substr(1) + '"]');
-    var anchorParent = anchor.parent();
-    var scrollMultiplier = 0.3, windowHeight = $(window).height(), anchorParentHeight = anchorParent.height();
-    anchorParent.addClass('anchorBox');
-    anchorParent.addClass('colored');
-
-    //Вычисляем координаты скролла, при котором наш элемент будет чуть выше центра окна браузера
-    if (anchorParentHeight >= windowHeight) {
-        var scrollTo = anchor.offset().top;
-    } else {
-        var scrollTo = anchor.offset().top - windowHeight/2 + anchorParentHeight/2 + (windowHeight/2 - anchorParentHeight/2)*scrollMultiplier ;
-    }
-
-    $root.animate({
-        scrollTop: scrollTo
-    }, {
-        duration: 400,
-        complete: function() {
-            anchorParent.removeClass('colored');
-        }
-    });
-
-    return false;
-});*/
-
 (function( $ ) {
 
     $.fn.properAnchor = function(options) {
@@ -47,7 +19,7 @@ $('.anchorLink').click(function() {
             anchorParent.addClass('anchorBox');
             anchorParent.addClass('colored');
 
-            //Вычисляем координаты скролла, при котором наш элемент будет чуть выше центра окна браузера
+            // Calculting coordinates to scroll to, in which the target element will be just a bit higher than the middle of browser's window
             if (anchorParentHeight >= windowHeight) {
                 var scrollTo = anchor.offset().top;
             } else {
