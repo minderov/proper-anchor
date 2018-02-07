@@ -32,7 +32,9 @@ $('.anchorLink').click(function() {
 
         var settings = $.extend({
             changeUrl: false,
-            scrollDuration: 400
+            scrollDuration: 400,
+            highlight: true,
+            scrollToCenter: true
         }, options );
 
 
@@ -42,13 +44,16 @@ $('.anchorLink').click(function() {
 
             var hashName = $.attr(this, 'href').substr(1);
             var anchor = $('[name="' + hashName + '"]');
+            if (!anchor.length) anchor = $('#' + hashName); //Fallback to id if name is not available
             var anchorParent = anchor.parent();
             var scrollMultiplier = 0.3, windowHeight = $(window).height(), anchorParentHeight = anchorParent.height();
-            anchorParent.addClass('anchorBox');
-            anchorParent.addClass('colored');
+            if (settings.highlight){
+                anchorParent.addClass('anchorBox');
+                anchorParent.addClass('colored');
+            }
 
             //Вычисляем координаты скролла, при котором наш элемент будет чуть выше центра окна браузера
-            if (anchorParentHeight >= windowHeight) {
+            if (anchorParentHeight >= windowHeight || !settings.scrollToCenter) {
                 var scrollTo = anchor.offset().top;
             } else {
                 var scrollTo = anchor.offset().top - windowHeight/2 + anchorParentHeight/2 + (windowHeight/2 - anchorParentHeight/2)*scrollMultiplier ;
