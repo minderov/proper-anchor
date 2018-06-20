@@ -52,7 +52,7 @@ $('.anchorLink').click(function() {
                 anchorParent.addClass('colored');
             }
 
-            //Вычисляем координаты скролла, при котором наш элемент будет чуть выше центра окна браузера
+            // Calculate scroll coordinates such that element will be just above the center of browser
             if (anchorParentHeight >= windowHeight || !settings.scrollToCenter) {
                 var scrollTo = anchor.offset().top;
             } else {
