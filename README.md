@@ -22,7 +22,7 @@ The Proper Anchor tackles these flaws by showing the content in the middle of th
 
 ## Advanced features
 ### `changeUrl (False)`
-The anchor works smoothly now, so the link changing (https://domain.com/example#the-anchor) is removed. Change this to true if you need to get it back
+The anchor works smoothly now. The link changing (https://domain.com/example#the-anchor) is removed. Switch to "true" to revert the changes.
 
 ### `scrollDuration (400)`
 Duration of scrolling to the anchor (ms)
@@ -31,7 +31,7 @@ Duration of scrolling to the anchor (ms)
 Determines if the anchor element will be highlighted as defined in proper-anchor.css
 
 ### `scrollToCenter (True)`
-If true the anchor element will be positioned slightly higher than the center of the browser's window if it is not too close to the bottom of the page. Otherwise it will follow the default behaviour and be positioned at the top of the page
+The anchor element will be positioned slightly higher than the center of the browser's window on two conditions. scrollToCenter must be set to "true" and the anchor element cannot be too close to the bottom of the page. Otherwise it will follow the default behaviour and be positioned at the top of the page.
 
 ## License
 MIT License
