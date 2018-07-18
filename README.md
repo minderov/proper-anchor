@@ -22,7 +22,7 @@ The Proper Anchor tackles these flaws by showing the content in the middle of th
 
 ## Advanced features
 ### `changeUrl (False)`
-The anchor works smoothly now. The link changing (https://domain.com/example#the-anchor) is removed. Switch to "true" to revert the changes.
+The anchor works smoothly now, so the link changing (https://domain.com/example#the-anchor) is removed. Change this to true if you need to get it back
 
 ### `scrollDuration (400)`
 Duration of scrolling to the anchor (ms)
